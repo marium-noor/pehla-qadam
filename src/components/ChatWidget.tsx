@@ -178,7 +178,7 @@ export function ChatWidget() {
       )}
       {open && (
         <section role="dialog" aria-label={t("chat.title")}
-          className="fixed inset-x-0 bottom-0 z-50 flex h-[78vh] flex-col border border-line bg-white shadow-[0_-8px_40px_rgba(0,0,0,0.12)] sm:inset-x-auto sm:bottom-5 sm:end-5 sm:h-[600px] sm:w-[400px] sm:rounded-2xl">
+          className="fixed inset-x-0 bottom-0 z-50 flex h-[78dvh] flex-col border border-line bg-white shadow-[0_-8px_40px_rgba(0,0,0,0.12)] sm:inset-x-auto sm:bottom-5 sm:end-5 sm:h-[600px] sm:w-[400px] sm:rounded-2xl">
           <header className="flex items-center justify-between border-b border-line px-5 py-3">
             <h2 className="text-base font-semibold">{t("chat.title")}</h2>
             <button type="button" onClick={() => { speechSynthesis?.cancel?.(); setOpen(false); }} className="text-sm text-mute hover:text-ink">{t("chat.close")}</button>
